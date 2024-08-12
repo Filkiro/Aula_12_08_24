@@ -1,0 +1,143 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 232, 250);
+}
+header{
+    text-align: center;
+
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 25px;
+        padding-bottom: 15px;
+        border-bottom: 3px black solid;
+    }
+}
+main{
+    font-size: 18px;
+}
+li{
+    list-style: none;
+}
+.container{
+    display: flex;
+    p{
+        margin: 10px;
+    }
+    .p1{
+        background-color: rgb(116, 223, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p2{
+        background-color: rgb(116, 223, 134);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p3{
+        background-color: rgb(123, 116, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p4{
+        background-color: rgb(223, 173, 116);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p5{
+        background-color: rgb(223, 212, 116);
+        padding: 9px;
+        border-radius: 10px;
+    }
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 10px;
+    }
+    .p1{
+        background-color: rgb(116, 223, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p2{
+        background-color: rgb(116, 223, 134);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p3{
+        background-color: rgb(123, 116, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+}
+.container3{
+    display: flex;
+    flex-direction: row-reverse;
+    p{
+        margin: 10px;
+    }
+    .p1{
+        background-color: rgb(116, 223, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p2{
+        background-color: rgb(116, 223, 134);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p3{
+        background-color: rgb(123, 116, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p4{
+        background-color: rgb(223, 173, 116);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p5{
+        background-color: rgb(223, 212, 116);
+        padding: 9px;
+        border-radius: 10px;
+    }
+}
+.container4{
+    display: flex;
+    flex-direction: column-reverse;
+    p{
+        margin: 10px;
+    }
+    .p1{
+        background-color: rgb(116, 223, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p2{
+        background-color: rgb(116, 223, 134);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    .p3{
+        background-color: rgb(123, 116, 223);
+        padding: 9px;
+        border-radius: 10px;
+    }
+}
+summary{
+    background-color: rgb(127, 129, 255);
+    margin: 10px;
+    padding: 5px;
+    width: 20%;
+    border-radius: 10px;
+}
+#rw{
+    background-color: rgb(127, 129, 255);
+    margin: 10px 10px 19px 10px;
+    padding: 5px;
+    width: 20%;
+    border-radius: 10px;
+}

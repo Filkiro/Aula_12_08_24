@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Flex</h1>
+        <p>Uma breve explicação sobre <b>display: flex</b> do CSS</p>
+    </header>
+
+    <main>
+        <p>O display: flex tem como objetivo transformar seu site "flexível" para diversas telas, além de ajustes automáticos de textos para se adequar a tela.</p>
+        <p>Ao colocar o comando no CSS, teremos o seguinte resultado:</p>
+
+        <section class="container">
+            <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+
+            <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+
+            <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+
+            <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
+
+            <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
+        </section>
+
+        <p>O comando colocado no "Container", ou chamado de div pai, foi: "<b>display: flex</b>", do qual possui a propriedade por padrão <b>flex-direction: row</b>, que é responsável por dizer a direção em que os objetos filho estarão. Neste caso estará em linha pois a propriedade é <b>row</b>.</p>
+        
+        <p>Já falando na propriedade <b>flex-direction</b>, temos quatro tipos que são:</p>
+
+        <ul>
+            <li id="rw">row (padrão)</li>
+
+            <li>
+                <details>
+                    <summary>column</summary>
+                    <section class="container2">
+                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+            
+                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+            
+                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                    </section>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>row-reverse</summary>
+                    <section class="container3">
+                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+            
+                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+            
+                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+            
+                        <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
+            
+                        <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
+                    </section>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>colunm-reverse</summary>
+                    <section class="container4">
+                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+            
+                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+            
+                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                    </section>
+                </details>
+            </li>
+        </ul>
+
+        <p><b>Nota: A propriedade row já foi apresentada no início.</b></p>
+
+        <p>Nas propriedades que contém <b>reverse</b>, nota-se utilizando os <b>"P1, P2, P3, P..."</b> eles ficam inverso, e é justamente o que está propriedade faz, ele inverte a ordem dos itens</p>
+    </main>
+
+
+
+
+
+</body>
+</html>
