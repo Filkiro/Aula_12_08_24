@@ -9,79 +9,192 @@
 <body>
     <header>
         <h1>Flex</h1>
-        <p>Uma breve explicação sobre <b>display: flex</b> do CSS</p>
+        <p>Uma breve explicação sobre <b>Flex</b> do CSS</p>
     </header>
 
     <main>
-        <p>O display: flex tem como objetivo transformar seu site "flexível" para diversas telas, além de ajustes automáticos de textos para se adequar a tela.</p>
-        <p>Ao colocar o comando no CSS, teremos o seguinte resultado:</p>
+        <p id="subtitle">O display: flex é uma propriedade essencial do CSS que tem como objetivo transformar o layout de um site para torná-lo mais flexível e adaptável a diferentes tamanhos de tela. Ao aplicar essa propriedade a um contêiner (div pai), seus filhos (itens flexíveis) são automaticamente organizados e ajustados de acordo com o espaço disponível.</p>
+        <details>
+            <summary>Flexbox;</summary>
 
-        <section class="container">
-            <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+            
+            <p>Ao colocar o comando no CSS, teremos o seguinte resultado:</p>
 
-            <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+            <section class="container">
+                <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
 
-            <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
 
-            <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
+                <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
 
-            <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
-        </section>
+                <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
 
-        <p>O comando colocado no "Container", ou chamado de div pai, foi: "<b>display: flex</b>", do qual possui a propriedade por padrão <b>flex-direction: row</b>, que é responsável por dizer a direção em que os objetos filho estarão. Neste caso estará em linha pois a propriedade é <b>row</b>.</p>
+                <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
+            </section>
+
+            <p>O comando colocado no "Container", ou chamado de div pai, foi: "<b>display: flex</b>", do qual possui a propriedade por padrão <b>flex-direction: row</b>, que é responsável por dizer a direção em que os objetos filho estarão. Neste caso estará em linha pois a propriedade é <b>row</b>.</p>
+            
+            <p>Já falando na propriedade <b>flex-direction</b>, temos quatro tipos que são:</p>
+
+            <ul>
+                <li id="rw">row (padrão)</li>
+
+                <li>
+                    <details>
+                        <summary>column</summary>
+                        <section class="container2">
+                            <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+                
+                            <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+                
+                            <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                            <br>
+                        </section>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>row-reverse</summary>
+                        <section class="container3">
+                            <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+                
+                            <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+                
+                            <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                
+                            <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
+                
+                            <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
+                            <br>
+                        </section>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>column-reverse</summary>
+                        <section class="container4">
+                            <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+                
+                            <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+                
+                            <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                            <br>
+                        </section>
+                    </details>
+                </li>
+            </ul>
+
+            <p><b>Nota: A propriedade row já foi apresentada no início.</b></p>
+
+            <p>Nas propriedades que contém <b>reverse</b>, nota-se utilizando os <b>"P1, P2, P3, P..."</b> eles ficam inverso, e é justamente o que está propriedade faz, ele inverte a ordem dos itens</p>
+            <hr>
+
+            <h2>Comandos Relacionados ao display; flex;</h2>
+            
+            <p>O <b>flex-wrap</b> é um comando que define se os itens podem ir para baixo, ou não. Possui 3 propriedades: <b>wrap, nowrap, wrap-reverse</b>.</p>
+
+            <ul>
+                <li><b>wrap:</b> Irá permitir que haja a quebra de linha.</li>
+                <li><b>nowrap:</b> Não irá permitir a quebra de linha.</li>
+            </ul>
+
+            <details>
+                <summary>Exemplo:</summary>
+                <p><b>Exemplo de nowrap:</b></p>
+                <section class="nowrap">
+                    <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
         
-        <p>Já falando na propriedade <b>flex-direction</b>, temos quatro tipos que são:</p>
+                    <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+        
+                    <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+                </section>
 
-        <ul>
-            <li id="rw">row (padrão)</li>
+                <p><b>Exemplo de wrap:</b></p>
+                <section class="wrap">
+                    
+                    <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+        
+                    <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+        
+                    <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
 
-            <li>
-                <details>
-                    <summary>column</summary>
-                    <section class="container2">
-                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
-            
-                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
-            
-                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
-                    </section>
-                </details>
-            </li>
+                    <p class="p4"><b>P4</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
 
-            <li>
-                <details>
-                    <summary>row-reverse</summary>
-                    <section class="container3">
-                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
-            
-                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
-            
-                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
-            
-                        <p class="p4"><b>P4</b> Ducimus, illo nemo libero nesciunt porro maiores, eaque odio commodi inventore deleniti a eius adipisci magni exercitationem. Eaque facilis earum, ea numquam dolorem sed laborum eum quisquam temporibus ratione corrupti?</p>
-            
-                        <p class="p5"><b>P5</b> Iure ipsum at aspernatur exercitationem saepe cumque vero laboriosam fuga id praesentium minus voluptate vitae ipsa velit voluptatem ducimus accusamus non animi earum fugiat sunt quod, repudiandae officiis culpa. Atque.</p>
-                    </section>
-                </details>
-            </li>
+                </section>
+                <p>O <b>wrap-reverse</b> só irá inverter a ordem do <b>wrap</b>.</p>
+            </details>
 
-            <li>
-                <details>
-                    <summary>colunm-reverse</summary>
-                    <section class="container4">
-                        <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
-            
-                        <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
-            
-                        <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
-                    </section>
-                </details>
-            </li>
-        </ul>
+            <p>Temos o comando <b>flex-flow</b> que será a junção em um unico comando entre o <b>flex-direction</b> e o <b>flex-wrap</b>, e sua sintaxe é bem simples, você coloca a direção (flex-direction) e se o objeto pode ir para baixo (flex-wrap).</p>
 
-        <p><b>Nota: A propriedade row já foi apresentada no início.</b></p>
+            <p>O comando <b>justify-content</b> move os objetos de lugar com os comandos: <b>flex-start, flex-end, center, space-between, space-around</b>.</p>
 
-        <p>Nas propriedades que contém <b>reverse</b>, nota-se utilizando os <b>"P1, P2, P3, P..."</b> eles ficam inverso, e é justamente o que está propriedade faz, ele inverte a ordem dos itens</p>
+            <ul>
+                <li><p><b>flex-start:</b> Faz com que os objetos fiquem no <b>inicio</b> da linha(para casos de flex-direction: row;), ou no inicio da coluna (para casos de flex-direction: colunm;)</p></li>
+
+                <li><p><b>flex-end:</b> Faz com que os objetos fiquem no <b>final</b> da linha(para casos de flex-direction: row;), ou no final da coluna (para casos de flex-direction: colunm;)</p></li>
+
+                <li><p><b>center:</b> Faz com que os objetos fiquem no <b>centro</b> da linha(para casos de flex-direction: row;), ou no centro da coluna (para casos de flex-direction: colunm;)</p></li>
+
+                <li><p><b>space-between:</b> Faz com que os objetos tenham um <b>espaço</b> entre eles.</p></li>
+
+                <li><p><b>space-around:</b> Faz com que os objetos tenham um <b>espaço</b> ao redor deles.</p></li>
+            </ul>
+
+            <p>E por ultimo temos dois comandos: <b>align-items</b> e o <b>align-content</b>. Ambos mexem com o alinhamento dos objetos.</p>
+            <p>O <b>align-items</b> alinha os objetos a partir do eixo da div pai dos objetos. Seus comandos são: <br></p>
+            <ul>
+                <li><p><b>stretch:</b> É o comando que vem por padrão e faz com que os itens cresçam igualmente, isto é: um objeto que só tem uma linha, e outro objeto que tenha 3 linhas, ambos teram o mesmo tamanho.</p></li>
+
+                <li><p><b>flex-start:</b> É o comando que faz com que os itens fiquem alinhados ao inicio da linha e seus tamanhos são baseados no tamanho do texto.</p></li>
+
+                <li><p><b>flex-end:</b> É o comando que faz com que os itens fiquem alinhados ao final da linha e seus tamanhos são baseados no tamanho do texto</p></li>
+
+                <li><p><b>center:</b> É o comando que faz com que os itens fiquem alinhados ao centro da linha e seus tamanhos são baseados no tamanho do texto</p></li>
+                
+                <li><p><b>baseline:</b> É o comando que faz com que os itens se alinhem com base na fonte.</p></li>
+            </ul>
+            <hr>
+        </details>
+
+        <details>
+            <summary>Comando <b>flex</b> e suas propriedades</summary>
+
+            <p>Começando pelo comando <b>flex</b>, do qual é responsável por "modelar" o tamanho de uma caixa especifica (isso considerando que haja uma caixa que você queira deixar de um tamanho diferente), para usar este comando, é necessario que a div pai tenha <b>display: flex;</b></p>
+
+            <section class="container5">     
+                <p class="p1"><b>P1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime, quo magni ea fugit nobis, ipsam facere quis veritatis saepe similique voluptatum. Maiores recusandae libero natus voluptates rerum, in nemo.</p>
+                
+                <p class="p2"><b>P2</b> Reprehenderit laudantium accusamus voluptas corrupti ut quam consectetur autem, esse, nulla omnis placeat quia. Fuga quam dolore dignissimos, consectetur sint atque sequi odio recusandae, quidem illo voluptatem fugit eos saepe?</p>
+    
+                <p class="p3"><b>P3</b> Itaque, consectetur. Quas nemo veritatis dignissimos deleniti odit veniam eaque modi et in error dolorum commodi quos nobis rem est, maiores similique quam officiis aut quasi. Odit molestiae aliquam consequuntur?</p>
+            </section>
+
+            <p>O comando <b>flex</b> foi utilizado em todas as 3 caixas, com a diferença de que na caixa do meio o valor foi superior as outras. O comando foi:</p>
+
+                <section class="cmd">
+                    <p>
+                    P1{ <br>flex: 1 50%; <br>}
+                    </p>
+                    <p>
+                    P2{ <br>flex: 1 100%; <br>}
+                    </p>
+                    <p>
+                    P3{ <br>flex: 1 50%; <br>}
+                    </p>
+                </section>
+                
+            <p>No comando <b>flex</b> temos a presença de três parâmetros: <b>flex-grow, flex-shrink</b> e o <b>flex-basis.</b></p>
+
+            <p><b>flex-grow:</b> É o fator de <b>crescimento</b> do objeto.</p>
+
+            <p><b>flex-shrink:</b> É o fator de <b>redução</b> do objeto.</p>
+
+            <p><b>flex-basis:</b> É a base da qual será utilizada para realizar o dimensionamento do objeto.</p>
+
+            <p>E a ordem é exatamente está, primeiro <b>flex-grow</b>, segundo <b>flex-shrink</b> e terceiro <b>flex-basis</b>. Quando não colocada um determinado valor, como o <b>flex-shrink</b>, o fator será o padrão, que é <b>1</b>, e no caso do <b>flex-basis</b>, será <b>auto</b>.</p>
+        </details>
     </main>
 
 
